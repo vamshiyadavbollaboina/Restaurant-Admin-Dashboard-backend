@@ -9,7 +9,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "*", // 🔒 replace * after frontend deploy
+    origin: process.env.CLIENT_URL || "*"
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
